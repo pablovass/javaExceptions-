@@ -34,7 +34,7 @@ public class ComprobacionMail {
                     punto = true;
                 }
             }
-            if (arroba == 1)&& (punto==true) {
+            if ((arroba == 1)&& (punto==true)) {
                 System.out.println("es correcto");
             }
         else{
