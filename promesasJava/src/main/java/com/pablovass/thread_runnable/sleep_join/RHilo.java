@@ -1,4 +1,4 @@
-package com.pablovass.thread_runnable;
+package com.pablovass.thread_runnable.sleep_join;
 // implementas
 public class RHilo implements Runnable {
     private int id;
@@ -9,7 +9,7 @@ public class RHilo implements Runnable {
 
     @Override
     public void run() {
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 100; i++) {
             System.out.println("ejecutando logica de hilo de id Runnable" + id);
         }
     }
