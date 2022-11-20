@@ -1,4 +1,4 @@
-package com.pablovass.thread_runnable;
+package com.pablovass.thread_runnable.sleep_join;
 // implementas
 public class RHilo implements Runnable {
     private int id;

@@ -1,4 +1,4 @@
-package com.pablovass.thread_runnable;
+package com.pablovass.thread_runnable.sleep_join;
 
 public class HiloApp {
     public static void main(String[] args) {
