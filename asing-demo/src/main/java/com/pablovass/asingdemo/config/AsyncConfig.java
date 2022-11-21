@@ -15,7 +15,7 @@ public class AsyncConfig {
     public Executor asyncExecutor(){
         ThreadPoolTaskExecutor executor=new ThreadPoolTaskExecutor();
         executor.setCorePoolSize(2);//minimo de hilos que se va usar en la app (cuantos core tiene tu equipo??)
-        executor.setMaxPoolSize(3); // maximos de hilos que se van a crear despues del que resto estan ocupados
+        executor.setMaxPoolSize(2); // maximos de hilos que se van a crear despues del que resto estan ocupados
         executor.setQueueCapacity(4);// es la capasidad maxima total ,a la espera
         executor.setThreadNamePrefix("AsyncThread-"); // nombre de la configuracion
         executor.initialize();
