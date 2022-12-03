@@ -1,14 +1,13 @@
-package com.natural.model;
+package com.natural.wrapper;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
+import com.natural.model.AffectedUser;
 import lombok.Data;
 
-import java.io.Serializable;
 import java.util.ArrayList;
+
 @Data
-public class Alarm implements Serializable {
+public class AlarmWrapper {
     @JsonProperty("SiteName")
     public String siteName;
     @JsonProperty("ReturnCode")
@@ -23,9 +22,4 @@ public class Alarm implements Serializable {
     @JsonProperty("MSISDN")
     public String mSISDN;
 
-    public Alarm(Alarm alarm) {
-    }
-
-    public Alarm() {
-    }
 }

@@ -21,7 +21,8 @@ public class OutageController {
 
     @Autowired
     private KafkaProducerService kafkaProducerService;
-    private final OutageAlarm outageAlarm;
+   @Autowired
+    private OutageAlarm outageAlarm;
     List<Alarm> alarms = new ArrayList<>();
     Alarm alarm;
 

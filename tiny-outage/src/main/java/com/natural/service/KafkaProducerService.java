@@ -23,7 +23,7 @@ public class KafkaProducerService {
     private KafkaTemplate<String, Outage> kafkaTemplate;
 
     public void send(Outage outage) {
-        log.info("Order object is {}", outage);
+        //log.info("Order object is {}", outage);
         kafkaTemplate.send(TOPIC, UUID.randomUUID().toString(), outage);
     }
 
